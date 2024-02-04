@@ -93,9 +93,9 @@ export default function Home() {
           <ChevronRightIcon /> Browser:{" "}
           <Link
             color={useColorModeValue("blue.500", "blue.300")}
-            href="https://www.microsoft.com/en-us/edge/welcome"
+            href="https://www.mozilla.org/en-GB/firefox/new/"
           >
-            Microsoft Edge
+            Mozilla Firefox
           </Link>
           <br />
           <ChevronRightIcon /> Music App:{" "}
@@ -109,9 +109,9 @@ export default function Home() {
           <ChevronRightIcon /> Email Client:{" "}
           <Link
             color={useColorModeValue("blue.500", "blue.300")}
-            href="https://outlook.live.com/"
+            href="https://www.thunderbird.net"
           >
-            Outlook
+            Thunderbird
           </Link>
           <br />
           <ChevronRightIcon /> Main IDE:{" "}
