@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon, EmailIcon } from "@chakra-ui/icons";
 import {
   Heading,
   Box,
@@ -10,6 +10,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { IoLogoDiscord, IoLogoGithub, IoLogoTwitter } from "react-icons/io5";
+import { SiVisualstudiocode, SiDatagrip } from "react-icons/si";
+import { FaComputer } from "react-icons/fa6";
 import NextLink from "next/link";
 
 export default function Home() {
@@ -26,13 +28,13 @@ export default function Home() {
         hi there! 👋
       </Heading>
       <Text fontFamily="var(--font-inter)">
-        My name is Nick, although I also go by the name Iaqi online. I am a
-        backend developer and I specialise in Discord Bots and APIs. I&apos;m
-        also trying to familiarise myself in web development{" "}
-        <em>(as you can see by me making this portfolio)</em>. I work well with
-        databases and I am familiar with many languages such as TypeScript,
-        JavaScript, Python, and Rust. I also know how to use many frameworks
-        such as React, Next.js, Express, Fastify, Prisma, and more.
+        My name is Nick, but I go online by Iaqi. I specialize in backend
+        development for Discord Bots and APIs. I&apos;m also familiarizing
+        myself with web development, as you can see from my portfolio. I excel
+        in working with databases and have experience with multiple programming
+        languages, including TypeScript, JavaScript, Python, and Rust.
+        Additionally, I am proficient in using frameworks such as React,
+        Next.js, Express, Fastify, Prisma, and more.
       </Text>
       <Heading
         as="h3"
@@ -81,55 +83,29 @@ export default function Home() {
         <Button
           as={Link}
           variant="ghost"
-          href="https://uk.pcpartpicker.com/list/qpxDn6"
-          leftIcon={<ChevronRightIcon />}
+          href="https://uk.pcpartpicker.com/list/zXzpL9"
+          leftIcon={<FaComputer />}
         >
           PCPP List
         </Button>
         <br />
-        <Text mb={1}>
-          For my software usage, I use the following:
-          <br />
-          <ChevronRightIcon /> Browser:{" "}
-          <Link
-            color={useColorModeValue("blue.500", "blue.300")}
-            href="https://www.mozilla.org/en-GB/firefox/new/"
-          >
-            Mozilla Firefox
-          </Link>
-          <br />
-          <ChevronRightIcon /> Music App:{" "}
-          <Link
-            color={useColorModeValue("blue.500", "blue.300")}
-            href="https://cider.sh/"
-          >
-            Cider
-          </Link>
-          <br />
-          <ChevronRightIcon /> Email Client:{" "}
-          <Link
-            color={useColorModeValue("blue.500", "blue.300")}
-            href="https://www.thunderbird.net"
-          >
-            Thunderbird
-          </Link>
-          <br />
-          <ChevronRightIcon /> Main IDE:{" "}
-          <Link
-            color={useColorModeValue("blue.500", "blue.300")}
-            href="https://code.visualstudio.com/"
-          >
-            Visual Studio Code
-          </Link>
-          <br />
-          <ChevronRightIcon /> Database IDE:{" "}
-          <Link
-            color={useColorModeValue("blue.500", "blue.300")}
-            href="https://www.jetbrains.com/datagrip/"
-          >
-            JetBrains DataGrip
-          </Link>{" "}
-        </Text>
+        <Text mb={1}>For my software usage, I use the following: </Text>
+        <Button
+          variant="ghost"
+          as={Link}
+          href="https://code.visualstudio.com/"
+          leftIcon={<SiVisualstudiocode />}
+        >
+          Code Editor
+        </Button>
+        <Button
+          variant="ghost"
+          as={Link}
+          href="https://www.jetbrains.com/datagrip/"
+          leftIcon={<SiDatagrip />}
+        >
+          DataGrip
+        </Button>
       </Box>
       <Heading
         as="h3"
@@ -143,29 +119,23 @@ export default function Home() {
         contact me
       </Heading>
       <Box fontFamily="var(--font-inter)">
-        <Text mb={1}>
-          I&apos;m active on Discord, but you can also contact me on Twitter.
-          <br />
-          <br />
-          You can contact me, for mostly anything on any of the following:
-        </Text>
-        <Button
-          as={Link}
-          colorScheme="twitter"
-          href="https://twitter.com/iaqidev"
-          leftIcon={<IoLogoTwitter />}
-        >
-          @iaqidev
-        </Button>
-        <br />
+        <Text mb={1}>I&apos;m active on Discord. You can also email me!</Text>
         <Button
           as={Link}
           colorScheme="purple"
           href="https://discord.com/channels/@me/776190552454070314"
           leftIcon={<IoLogoDiscord />}
-          mt={1}
         >
           @iaqi
+        </Button>
+        <Button
+          as={Link}
+          variant="ghost"
+          href="mailto:"
+          leftIcon={<EmailIcon />}
+          ml={1}
+        >
+          Email Me
         </Button>
       </Box>
     </Box>
